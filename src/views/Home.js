@@ -21,9 +21,9 @@ class Home extends Component {
       completed: false
     };
     axios
-      .get(url)
+      .post(url, newItem)
       .then(res =>
-        this.setState(prevState => ({ todos: [...prevState.todos, newItem] }))
+        this.setState(prevState => ({ todos: [...prevState.todos, res.data] }))
       )
       .catch(err => console.log(err));
     e.target.reset();

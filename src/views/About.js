@@ -5,7 +5,7 @@ const About = () => {
     <div className="about">
       <h1>About</h1>
       <p>
-        This is the TodoList app v1.0.0. It is done using React.js, React-router and axios.
+        This is the TodoList app v1.0.0. It is done using React.js, React-router and.
       </p>
     </div>
   );

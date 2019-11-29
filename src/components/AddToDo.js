@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from 'prop-types';
 
 const AddToDo = ({ submitFn }) => (
   <form onSubmit={submitFn}>
@@ -8,4 +9,8 @@ const AddToDo = ({ submitFn }) => (
 );
 
 export default AddToDo;
+
+AddToDo.propTypes = {
+  submitFn: PropTypes.func.isRequired
+}
  

@@ -1,5 +1,6 @@
 import React from "react";
 import ToDoItem from "./ToDoItem";
+import PropTypes from 'prop-types';
 
 const ToDos = ({ todos, markFn, delFn }) => {
   return (
@@ -12,3 +13,9 @@ const ToDos = ({ todos, markFn, delFn }) => {
 };
 
 export default ToDos;
+
+ToDos.propTypes = {
+  todos: PropTypes.array.isRequired,
+  markFn: PropTypes.func.isRequired,
+  delFn: PropTypes.func.isRequired
+}

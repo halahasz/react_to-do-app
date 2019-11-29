@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import PropTypes from 'prop-types';
 
 class ToDoItem extends Component {
   render() {
@@ -24,3 +25,11 @@ class ToDoItem extends Component {
 }
 
 export default ToDoItem;
+
+ToDoItem.propTypes = {
+  title: PropTypes.string.isRequired,
+  id: PropTypes.number.isRequired,
+  completed: PropTypes.bool.isRequired,
+  markFn: PropTypes.func.isRequired,
+  delFn: PropTypes.func.isRequired
+}
